@@ -167,7 +167,7 @@
 
 
         document.getElementById("colorButton").addEventListener("click", function (){
-           notifyModal("title", "<em>Hello, Word</em>", "success", "My text for the button")
+           notifyModal("title", "Hello World", "success", "My text for the button")
         })
 
         const elem = document.getElementById('reservation-dates');
@@ -184,7 +184,7 @@
         function notify(msg, msgType){
                 notie.alert({
                     type: msgType,
-                    text: msg,
+                    text: msg
                 })
 
             function notifyModal(title, text, icon, confirmationButtonText) {
@@ -192,7 +192,7 @@
                     title: title,
                     text: text,
                     icon: icon,
-                    confirmButtonText: confirmationButtonText
+                    confirmationButtonText: confirmationButtonText,
                 })
             }
         }
